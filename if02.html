@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        let a = prompt("숫자입력하세요", "")
-        if(a%2==0)
-            alter("짝수입니다")
-        else
-            alert("홀수입니다")
-    </script>
 </head>
 <body>
-    
+    <script>
+        let num = prompt("숫자를 입력하세요");
+        num = Number(num);
+        if (num >= 90) {
+            grade = "A"
+        }else if (num >= 80) {
+            grade = "B"
+        }else if (num >= 70) {
+            grade = "C"
+        }else if (num >= 60) {
+            grade = "D"
+        }else if (num < 60) {
+            grade = "F"
+        }
+        alert("당신의 학점은 " + grade + " 입니다.");
+        </script>
+        
 </body>
 </html>
